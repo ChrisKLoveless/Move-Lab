@@ -9,25 +9,41 @@ Possible Names:
 ### Research & Planning Log
 * 8:15: begin planning app and technologies used 
 * 9:00: research how to connect C# and React Projects
+* 9:48: watching tutorial on connecting web API to react app
+* 10:30: continue referencing documents and tutorials for planning steps
+* 
 
 ### Build Steps
 
 * Reference LHTP docs for  project set up, packages and scripts
+* [tutorial#1](https://www.youtube.com/watch?v=gpfP60KjmZU)
+* [tutorial#2](https://www.youtube.com/watch?v=ON-Z1iD6Y-c&t=0s)
 
-1. Create C# web api for server side concerns
+1. Create ASP.NET web api for server side concerns
+   1. create tables
+   2. create models
+   3. add controller methods
 
-* Use C# for backend and React for UI
+* Use .NET C# for backend and React for UI
   * [dotnet new react CLI Reference](https://learn.microsoft.com/en-us/aspnet/core/client-side/spa/react?view=aspnetcore-7.0&tabs=visual-studio)
-  * [Host and deploy with ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-7.0)
 
 2. Create React UI and integrate API with .env file (add .env to gitignore)
-* Install react bootstrap? [tutorial](https://www.youtube.com/watch?v=gpfP60KjmZU)
+   1. use modals for forms to create and update
+   2. landing pages for displaying details in a table 
+   3. 
+
+* Install react bootstrap? [tutorial#1](https://www.youtube.com/watch?v=gpfP60KjmZU)
   * utilities: 
   * import {NavLink} from 'react-router-dom';
   * import {Navbar,Nav} from 'react-bootstrap';
   * install module react-router-dom.
   * import {BrowserRouter, Route, Switch} from 'react-router-dom'; {43:30}timestamp
   * import {Modal, Button, Row, Col, Form} from 'react-bootstrap'; {47:35}timestamp    Pop op window for forms
+
+3. Add Web API folder into react project?
+
+4. Deploy: [Host and deploy with ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-7.0)
+
 
 ### Key Features for MVP
 1. user is able to complete a survey and receive a workout of the day (WOD).
