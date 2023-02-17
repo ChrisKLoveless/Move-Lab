@@ -11,10 +11,23 @@ Possible Names:
 * 9:00: research how to connect C# and React Projects
 
 ### Build Steps
+
 * Reference LHTP docs for  project set up, packages and scripts
+
+1. Create C# web api for server side concerns
+
 * Use C# for backend and React for UI
   * [dotnet new react CLI Reference](https://learn.microsoft.com/en-us/aspnet/core/client-side/spa/react?view=aspnetcore-7.0&tabs=visual-studio)
   * [Host and deploy with ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-7.0)
+
+2. Create React UI and integrate API with .env file (add .env to gitignore)
+* Install react bootstrap? [tutorial](https://www.youtube.com/watch?v=gpfP60KjmZU)
+  * utilities: 
+  * import {NavLink} from 'react-router-dom';
+  * import {Navbar,Nav} from 'react-bootstrap';
+  * install module react-router-dom.
+  * import {BrowserRouter, Route, Switch} from 'react-router-dom'; {43:30}timestamp
+  * import {Modal, Button, Row, Col, Form} from 'react-bootstrap'; {47:35}timestamp    Pop op window for forms
 
 ### Key Features for MVP
 1. user is able to complete a survey and receive a workout of the day (WOD).
