@@ -15,6 +15,7 @@
 * 9:48: watching tutorial on connecting web API to react app
 * 10:30: continue referencing documents and tutorials for planning steps
 * 11:37: testing cli commands to create sample projects
+* 1:20: begin first draft of app mock up 
 
 ## Build Steps
 
