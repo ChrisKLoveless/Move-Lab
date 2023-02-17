@@ -18,6 +18,7 @@
 * 1:20: begin first draft of app mock up diagram
 * 2:04: formulating mvp 
 * 2:51: experimenting with sample project
+* 3:40: begin proposal
 
 ## Build Steps
 
@@ -26,11 +27,13 @@
 * [tutorial#2](https://www.youtube.com/watch?v=ON-Z1iD6Y-c&t=0s)  //BETTER TUTORIAL
 
 CREATE SAMPLE PROJECT TO TEST `DOTNET NEW REACT` COMMAND 
-  //DEV SERVERS MUST BE RUN SEPARATELY AND NPM COMMANDS ARE ONLY IN THE COMMAND PROMPT.
+  //DEV SERVERS MUST BE RUN SEPARATELY AND NPM COMMANDS ARE ONLY IN THE COMMAND PROMPT (or within ClientApp)
   //COMES WITH API AND REACT COMPONENT
 
-CREATE SAMPLE PROJECT TO TEST `NPX CREATE-REACT-APP` AND `DOTNET NEW MVC` COMMANDS
-  //
+CREATE SAMPLE PROJECT TO TEST `DOTNET NEW REACTREDUX` COMMAND 
+  //COMES WITH REDUX FOR CLIENT SIDE 
+  //IS THIS BEST FOR MY MYP?? 
+
 
 1. Create ASP.NET web api for server side concerns    `//USE EF CORE INSTEAD OF SMS`
    1. create tables
