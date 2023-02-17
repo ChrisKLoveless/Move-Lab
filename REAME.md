@@ -2,7 +2,7 @@
 
 ### Project Idea: 
 * Curated Fitness App (digital personal training -- Nike Training Club)  
-* Business App to track Trainers and Clients (similar to Future, Everfit app)
+* Survey and pre made categories: Weight Loss, Strength, Cardio/Stamina, Hybrid,  15 minute WOD 
 
 ### Possible Names: 
 * The WOD App
@@ -16,7 +16,8 @@
 * 10:30: continue referencing documents and tutorials for planning steps
 * 11:37: testing cli commands to create sample projects
 * 1:20: begin first draft of app mock up diagram
-* 2:00: formulating mvp and problem app will solve
+* 2:04: formulating mvp 
+* 2:51: experimenting with sample project
 
 ## Build Steps
 
@@ -25,7 +26,11 @@
 * [tutorial#2](https://www.youtube.com/watch?v=ON-Z1iD6Y-c&t=0s)  //BETTER TUTORIAL
 
 CREATE SAMPLE PROJECT TO TEST `DOTNET NEW REACT` COMMAND 
+  //DEV SERVERS MUST BE RUN SEPARATELY AND NPM COMMANDS ARE ONLY IN THE COMMAND PROMPT.
+  //COMES WITH API AND REACT COMPONENT
+
 CREATE SAMPLE PROJECT TO TEST `NPX CREATE-REACT-APP` AND `DOTNET NEW MVC` COMMANDS
+  //
 
 1. Create ASP.NET web api for server side concerns    `//USE EF CORE INSTEAD OF SMS`
    1. create tables
@@ -55,20 +60,23 @@ CREATE SAMPLE PROJECT TO TEST `NPX CREATE-REACT-APP` AND `DOTNET NEW MVC` COMMAN
 
 
 ## Key Features for MVP
-1. user is able to complete a survey and receive a workout of the day (WOD).
-2. user is able to design and save their own workouts. 
-3. App has quality styling, interactive, and page is reactive to different view ports.
+
+1. Sign up and log in.
+2. Categories to find a workout for specific needs.
+3. user is able to complete a survey and receive a workout of the day (WOD).
 
 ## Stretch Goals
-1. Authenticate user and store WOD history. 
-2. User Profile page.
-3. User is able to give workouts a rating and sort by highest rating.
-4. Schedule feature where user can plan weekly/monthly or pick a pre made schedule.
-5. Trainer user who can have clients and create/save workouts to a client.
-6. Animations for the homepage.
-7. Animations for workout demonstrations.
-8. Mock customer reviews.
-9. Workouts by sport or Fitness level. 
-10. Goal Tracking/ Achievements.
-11. Integrate an API for BMI, Geo-location, or Nutrition.
-12. 
+
+4. App has quality styling, interactive, and page is reactive to different view ports.
+5. Authenticate user and activity tracking. 
+6. User Profile page.
+7. User is able to give workouts a rating and sort by highest rating.
+8. Schedule feature where user can plan weekly/monthly or pick a pre made schedule.
+9. Animations for the homepage.
+10. Animations for workout demonstrations.
+11. Mock customer reviews.
+12. Workouts by sport or Fitness level. 
+13. Goal Tracking/ Achievements.
+14. Integrate an API for BMI, Geo-location, or Nutrition.
+15. Notifications and reminders
+16. Goal Setting
