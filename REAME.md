@@ -20,20 +20,23 @@
 * 2:51: experimenting with sample project
 * 3:40: begin proposal
 
-## Build Steps
+## Notes:
 
 * Reference LHTP docs for  project set up, packages and scripts
 * [tutorial#1](https://www.youtube.com/watch?v=gpfP60KjmZU)
 * [tutorial#2](https://www.youtube.com/watch?v=ON-Z1iD6Y-c&t=0s)  //BETTER TUTORIAL
 
-CREATE SAMPLE PROJECT TO TEST `DOTNET NEW REACT` COMMAND 
+//CREATE SAMPLE PROJECT TO TEST `DOTNET NEW REACT` COMMAND 
   //DEV SERVERS MUST BE RUN SEPARATELY AND NPM COMMANDS ARE ONLY IN THE COMMAND PROMPT (or within ClientApp)
   //COMES WITH API AND REACT COMPONENT
 
-CREATE SAMPLE PROJECT TO TEST `DOTNET NEW REACTREDUX` COMMAND 
+//CREATE SAMPLE PROJECT TO TEST `DOTNET NEW REACTREDUX` COMMAND 
   //COMES WITH REDUX FOR CLIENT SIDE 
   //IS THIS BEST FOR MY MYP?? 
 
+//CONSIDER USING FIRESTORE DB AFTER WEEKEND HW
+
+## Build Steps
 
 1. Create ASP.NET web api for server side concerns    `//USE EF CORE INSTEAD OF SMS`
    1. create tables
