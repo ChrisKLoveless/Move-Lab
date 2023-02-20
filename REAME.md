@@ -19,6 +19,7 @@
 * 2:04: formulating mvp 
 * 2:51: experimenting with sample project
 * 3:40: begin proposal
+* 4:45: finish proposal
 
 ## Notes:
 
