@@ -23,6 +23,7 @@
 
 #### Friday 02/24/2023 
 * 8:15 begin finalizing components 
+* 9:30 create project using create react app
 
 ## Notes:
 
