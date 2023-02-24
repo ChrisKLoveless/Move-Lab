@@ -6,6 +6,22 @@
 
 ### Component Diagram 
 
+## Project Setup 
+1. Clone this repo to your desktop
+2. 
+
+
+### Firebase
+1. [Follow these steps](https://www.learnhowtoprogram.com/react/react-with-nosql/adding-firebase-to-react)
+2. Use this template below to setup your .env file
+```JS
+REACT_APP_FIREBASE_API_KEY = "YOUR-UNIQUE-CREDENTIALS"
+REACT_APP_FIREBASE_AUTH_DOMAIN = "YOUR-PROJECT-NAME.firebaseapp.com"
+REACT_APP_FIREBASE_PROJECT_ID = "YOUR-PROJECT-FIREBASE-PROJECT-ID"
+REACT_APP_FIREBASE_STORAGE_BUCKET = "YOUR-PROJECT-NAME.appspot.com"
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID = "YOUR-PROJECT-SENDER-ID"
+REACT_APP_FIREBASE_APP_ID = "YOUR-PROJECT-APP-ID"
+```
 
 ## Available Scripts
 
