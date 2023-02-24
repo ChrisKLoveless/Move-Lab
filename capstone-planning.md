@@ -21,6 +21,8 @@
 * 8:15: begin finalizing components 
 * 9:30: create project using create react app
 * 10:10: set up file structure  
+* 11:30: continue adding components while researching and adding to planning notes
+* 
 
 ## Notes:
 
@@ -58,8 +60,8 @@
 ## Key Features for MVP
 
 1. Sign up and log in.
-2. Categories to find a workout for specific needs.
-3. user is able to complete a survey and receive a workout of the day (WOD).
+2. form to create a workout. 
+3. workouts are stored in collection with day property for scheduling feature.
 
 ## Stretch Goals
 

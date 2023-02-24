@@ -8,13 +8,13 @@ Chris Loveless
 
 ### Project's Purpose or Goal: (What will it do for users?)
   
-The user will be able to choose a curated workout based on a survey response or category selection.
+The user will be able to log in, create workouts, and start workouts.
 
 ### List the absolute minimum features the project requires to meet this purpose or goal:
 
   1. Sign up and log in.
-  2. Categories to find a workout for specific needs.
-  3. user is able to complete a survey and receive a workout of the day (WOD).
+  2. User can start a workout by viewing form and starting timer.
+  3. user is able to complete a form to create a new workout 
 
 ### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
   
