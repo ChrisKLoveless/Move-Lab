@@ -30,32 +30,20 @@
 * [tutorial#1](https://www.youtube.com/watch?v=gpfP60KjmZU)
 * [tutorial#2](https://www.youtube.com/watch?v=ON-Z1iD6Y-c&t=0s)  //BETTER TUTORIAL
 
-//CREATE SAMPLE PROJECT TO TEST `DOTNET NEW REACT` COMMAND 
-  //DEV SERVERS MUST BE RUN SEPARATELY AND NPM COMMANDS ARE ONLY IN THE COMMAND PROMPT (or within ClientApp)
-  //COMES WITH API AND REACT COMPONENT
-
-//CREATE SAMPLE PROJECT TO TEST `DOTNET NEW REACTREDUX` COMMAND 
-  //COMES WITH REDUX FOR CLIENT SIDE 
-  //IS THIS BEST FOR MY MYP?? 
-
-//CONSIDER USING FIRESTORE DB AFTER WEEKEND HW
-
 ## Build Steps
 
-1. Create ASP.NET web api for server side concerns    `//USE EF CORE INSTEAD OF SMS`
-   1. create tables
-   2. create models
-   3. add controller methods
-
-* Use .NET C# for backend and React for UI
-  * [dotnet new react CLI Reference](https://learn.microsoft.com/en-us/aspnet/core/client-side/spa/react?view=aspnetcore-7.0&tabs=visual-studio)
+1. Use Firebase and Firestore for server side concerns
+   1. create collections
+   2. create relationships through an id field
+   3. add hooks 
 
 2. Create React UI and integrate API with .env file (add .env to gitignore)
    1. use modals for forms to create and update
    2. landing pages for displaying details in a table 
    3. 
 
-* Install react bootstrap? 
+* Install TailwindCSS? styled components?
+* Install react router dom
 * [tutorial#1](https://www.youtube.com/watch?v=gpfP60KjmZU)
   * utilities: 
     * import {NavLink} from 'react-router-dom';
@@ -64,9 +52,9 @@
     * import {BrowserRouter, Route, Switch} from 'react-router-dom'; {43:30}timestamp
     * import {Modal, Button, Row, Col, Form} from 'react-bootstrap'; {47:35}timestamp    Pop op window for forms
 
-3. Add Web API folder into react project?
+3. Add .env and instructions to readme with template.
 
-4. Deploy: [Host and deploy with ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-7.0)
+4. Deploy with Firebase hosting [Here](https://www.learnhowtoprogram.com/react/react-with-nosql/hosting-with-firebase)
 
 
 ## Key Features for MVP

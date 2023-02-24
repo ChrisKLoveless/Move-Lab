@@ -4,11 +4,7 @@
 Chris Loveless
 
 ### Name of Project:
-  
-  1. Cascadia Training Club
-  2. NW Training Club
-  3. The WOD App (workout of the day)
-
+  Move Lab
 
 ### Project's Purpose or Goal: (What will it do for users?)
   
@@ -22,11 +18,10 @@ The user will be able to choose a curated workout based on a survey response or 
 
 ### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
   
-  * dotnet new reactredux to build the app template.
-  * ASP .NET for server side concerns (User Login).
-  * React and Redux for client side concerns and state management.
-  * Bootstrap for styling.
-  * Possibly Firebase and NoSql based on weekend homework.
+  * Firestore NoSQL for server side concerns (User Login).
+  * React and Firebase for client side concerns and state management.
+  * Bootstrap and TailwindCSS for styling.
+  
 
 ### If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 
