@@ -23,6 +23,7 @@
 * 10:10: set up file structure  
 * 11:30: continue adding components while researching and adding to planning notes
 * 1:00: Research styled components vs tailwind 
+* 2:00: watching tailwindCSS tutorials
 
 ## Notes:
 
@@ -42,7 +43,7 @@
    2. landing pages for displaying details in a table 
    3. 
 
-* Install TailwindCSS? styled components?
+* Install TailwindCSS for smaller components and Styled Components for larger content-wrappers
 * Install react router dom
 * [tutorial#1](https://www.youtube.com/watch?v=gpfP60KjmZU)
   * utilities: 
