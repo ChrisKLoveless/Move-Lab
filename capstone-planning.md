@@ -22,7 +22,7 @@
 * 9:30: create project using create react app
 * 10:10: set up file structure  
 * 11:30: continue adding components while researching and adding to planning notes
-* 
+* 1:00: Research styled components vs tailwind 
 
 ## Notes:
 
