@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } f
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function SignIn() {
+function SignInSignOut() {
 
   const [signUpSuccess, setSignUpSuccess] = useState(null);
   const [signInSuccess, setSignInSuccess] = useState(null);
@@ -51,7 +51,7 @@ function SignIn() {
 
   return (
     <React.Fragment>
-      <Button variant="primary" className="bg-dark text-white" onClick={handleShow}>
+      <Button className="text-black" onClick={handleShow}>
         Sign In
       </Button>
 
@@ -72,7 +72,7 @@ function SignIn() {
               placeholder='Password' />
             <Button className="text-white bg-slate-400" type='submit'>Sign up</Button>
           </form>
-            <p className="text-blue-500">{signUpSuccess}</p>
+          <p className="text-blue-500">{signUpSuccess}</p>
 
           <p className="italic">OR</p>
 
@@ -89,14 +89,14 @@ function SignIn() {
             <Button className="text-white bg-slate-400" type='submit'>Sign In</Button>
           </form>
           <br />
-            <p className="text-blue-500">{signInSuccess}</p>
+          <p className="text-blue-500">{signInSuccess}</p>
 
         </Modal.Body>
         <Modal.Footer>
           <div className="text-red-700">
             {signOutSuccess}
           </div>
-          <Button className="text-white bg-dark" variant="secondary" onClick={handleClose}>
+          <Button className="text-white bg-slate-900" onClick={handleClose}>
             Close
           </Button>
           <Button className="text-white bg-red-400" onClick={doSignOut}>Sign out</Button>
@@ -107,4 +107,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default SignInSignOut;
