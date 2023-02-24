@@ -21,6 +21,9 @@
 * 3:40: begin proposal
 * 4:45: finish proposal
 
+#### Friday 02/24/2023 
+* 8:15 begin finalizing components 
+
 ## Notes:
 
 * Reference LHTP docs for  project set up, packages and scripts
