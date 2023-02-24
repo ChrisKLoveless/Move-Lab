@@ -4,10 +4,6 @@
 * Curated Fitness App (digital personal training -- Nike Training Club)  
 * Survey and pre made categories: Weight Loss, Strength, Cardio/Stamina, Hybrid,  15 minute WOD 
 
-### Possible Names: 
-* The WOD App
-* Cyber Coach
-
 ## Research & Planning Log
 #### Friday 02/17/2023
 * 8:15: begin planning app and technologies used 
