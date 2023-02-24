@@ -18,8 +18,9 @@
 * 4:45: finish proposal
 
 #### Friday 02/24/2023 
-* 8:15 begin finalizing components 
-* 9:30 create project using create react app
+* 8:15: begin finalizing components 
+* 9:30: create project using create react app
+* 10:10: set up file structure  
 
 ## Notes:
 
