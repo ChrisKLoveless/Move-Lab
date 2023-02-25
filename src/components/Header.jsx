@@ -11,6 +11,8 @@ function Header() {
         <NavbarBrand href="/"><h2>Move Lab</h2></NavbarBrand>
           <Nav>
             <Nav.Link href="/curated-workouts"><h5>Curated Workouts</h5></Nav.Link>
+            <Nav.Link href="/create-workout"><h5>Create Workout</h5></Nav.Link>
+            <Nav.Link href="/create-workout"><h5>Start Workout</h5></Nav.Link>
           </Nav>
           <SignInSignOut />
       </Navbar>
