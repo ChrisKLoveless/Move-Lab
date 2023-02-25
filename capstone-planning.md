@@ -24,9 +24,13 @@
 * 11:30: continue adding components while researching and adding to planning notes
 * 1:00: Research styled components vs tailwind 
 * 2:00: watching tailwindCSS tutorials
+* 4:15: plan steps for next coding session 
 
 ## Notes:
 
+* Setup layout for a workout 
+* add timer to StartWorkout Page
+* CRUD for workouts and display on user profile page
 * Reference LHTP docs for  project set up, packages and scripts
 * [tutorial#1](https://www.youtube.com/watch?v=gpfP60KjmZU)
 * [tutorial#2](https://www.youtube.com/watch?v=ON-Z1iD6Y-c&t=0s)  //BETTER TUTORIAL
