@@ -27,6 +27,7 @@
 * 4:15: plan steps for next coding session 
 
 ## Notes:
+* [example repo](https://github.com/DonovanWeber/Exercise_Tracker_REACT_capstone)
 
 * Setup layout for a workout 
 * add timer to StartWorkout Page
