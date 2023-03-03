@@ -26,6 +26,9 @@
 * 2:00: watching tailwindCSS tutorials
 * 4:15: plan steps for next coding session 
 
+### Friday 03/02/2023
+* 9:00: reference example repo and take notes 
+
 ## Notes:
 * [example repo](https://github.com/DonovanWeber/Exercise_Tracker_REACT_capstone)
 
