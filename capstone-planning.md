@@ -30,6 +30,12 @@
 * 9:00: reference example repo and take notes 
 
 ## Notes:
+
+#### API's to use 
+1. Api ninja for exercises with instructions
+2. Giphy or Youtube api for demo
+3. Rapid API workout planner to plan based on time, muscle, location, equipment
+* [example repo](https://github.com/Robin-Anmol/Muscle-Feast)
 * [example repo](https://github.com/DonovanWeber/Exercise_Tracker_REACT_capstone)
 
 * Setup layout for a workout 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { auth } from "../../firebase";
+import { auth } from "../firebase";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -51,9 +51,9 @@ function SignInSignOut() {
 
   return (
     <React.Fragment>
-      <Button className="text-black" onClick={handleShow}>
+      <button className="text-lime-400" onClick={handleShow}>
         Sign In
-      </Button>
+      </button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>

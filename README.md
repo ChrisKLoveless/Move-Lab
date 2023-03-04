@@ -8,13 +8,19 @@
 
 ## Project Setup 
 1. Clone this repo to your desktop
-2. 
+2. Follow the steps below to create your .env file
 
+### Rapid API Setup
+1. Create an account at []()
+// host page or require subscription?
+```js
+REACT_APP_RAPID_API_KEY= "YOUR-RAPID-API-KEY"
+```
 
-### Firebase
+### Firebase Setup
 1. [Follow these steps](https://www.learnhowtoprogram.com/react/react-with-nosql/adding-firebase-to-react)
 2. Use this template below to setup your .env file
-```JS
+```js
 REACT_APP_FIREBASE_API_KEY = "YOUR-UNIQUE-CREDENTIALS"
 REACT_APP_FIREBASE_AUTH_DOMAIN = "YOUR-PROJECT-NAME.firebaseapp.com"
 REACT_APP_FIREBASE_PROJECT_ID = "YOUR-PROJECT-FIREBASE-PROJECT-ID"

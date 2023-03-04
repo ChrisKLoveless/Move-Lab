@@ -8,18 +8,18 @@ Chris Loveless
 
 ### Project's Purpose or Goal: (What will it do for users?)
   
-The user will be able to log in, create workouts, and start workouts.
+The user will be able to log in and plan a workout based on time, equipment, location, and body part.
 
 ### List the absolute minimum features the project requires to meet this purpose or goal:
 
   1. Sign up and log in.
-  2. User can start a workout by viewing form and starting timer.
-  3. user is able to complete a form to create a new workout 
+  2. User can start a workout by completing form and querying API.
 
 ### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
   
   * Firestore NoSQL for server side concerns (User Login).
   * React and Firebase for client side concerns and state management.
+  * Rapid API for data queries.
   * Bootstrap and TailwindCSS for styling.
   
 

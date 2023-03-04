@@ -1,23 +1,30 @@
 import React from "react";
 import { NavbarBrand } from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import SignInSignOut from "../Pages/Auth/SignInSignOut";
+import styled from "styled-components";
+import SignInSignOut from "./SignInSignOut";
 
 function Header() {
   return (
-    <div className="header mt-3">
-      <Navbar bg='slate-300' expand='lg'>
-        <NavbarBrand href="/"><h2>Move Lab</h2></NavbarBrand>
-          <Nav>
-            <Nav.Link href="/curated-workouts"><h5>Curated Workouts</h5></Nav.Link>
-            <Nav.Link href="/create-workout"><h5>Create Workout</h5></Nav.Link>
-            <Nav.Link href="/create-workout"><h5>Start Workout</h5></Nav.Link>
-          </Nav>
-          <SignInSignOut />
-      </Navbar>
-    </div>
+    <NavBar>
+      <NavbarBrand href="/"><h2 className="text-lime-400 font-bold font-mono">Move Lab</h2></NavbarBrand>
+      <Nav.Link href="/workout-planner"><h5 className="text-lime-400">Workout Planner</h5></Nav.Link>
+      <SignInSignOut />
+    </NavBar>
   );
 }
+
+const NavBar = styled.nav`
+  padding: 1rem 2rem 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #481865;
+  box-shadow: rgba(60, 64, 67, 1) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 1) 0px 1px 3px 1px;
+  @media screen and (min-width: 280px) and (max-width: 768px) {
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+`;
 
 export default Header;
