@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types";
 import { fetchData } from "../utils/fetchData"
-import { Card } from "react-bootstrap";
+
+
 
 
 function SearchExercise(props) {
@@ -34,36 +34,58 @@ function SearchExercise(props) {
   const slicedArray = exercises.slice(0, 3);
   return (
     <div>
+      <SearchWords>
+        <div>
+          <h1 className="text-2xl font-bold">Possible Searches:</h1>
+          abdominals |
+          adductors |
+          abductors |
+          biceps |
+          calves |
+          chest |
+          forearms |
+          glutes |
+          hamstrings |
+          lats |
+          lower_back |
+          middle_back |
+          neck |
+          quadriceps |
+          traps |
+          triceps 
+        </div>
+      </SearchWords>
       <SearchBar>
         <form onSubmit={submitHandler}>
           <div className="relative">
-            <input 
-            type="text"
-            value={search}
-            onChange={(e) => {
-              setSearch(e.target.value);
-            }}  
-            class="block w-full p-3 pl-10 mr-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search by Muscle" required />
-              <button type="submit" className="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 p-2  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => {
+                setSearch(e.target.value);
+              }}
+              class="block w-full p-3 pl-10 mr-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search by Muscle" required />
+            <button type="submit" className="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 p-2  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
           </div>
         </form>
       </SearchBar>
 
+
       <CardSection>
         {slicedArray.map((exercise, index) => (
           <div key={index} className="block max-w-sm p-6 text-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <h5 className="mb-2 text-xl font-bold tracking-tight">{exercise.name}</h5>
+            <span className="mb-2 text-xl font-bold tracking-tight">{exercise.name}</span>
             <hr />
-            <h5>Type: {exercise.type}</h5>
+            <span>Type: {exercise.type}</span>
             <hr />
-            <h5>Body Part: {exercise.muscle}</h5>
+            <span>Body Part: {exercise.muscle}</span>
             <hr />
-            <h5>Equipment: {exercise.equipment}</h5>
+            <span>Equipment: {exercise.equipment}</span>
             <hr />
-            <h5>Difficulty: {exercise.difficulty}</h5>
+            <span>Difficulty: {exercise.difficulty}</span>
             <hr />
-            <h5>Instructions: <br />
-              {exercise.instructions}</h5>
+            <span>Instructions: <br />
+              {exercise.instructions}</span>
             <hr />
           </div>
         ))}
@@ -76,7 +98,13 @@ const SearchBar = styled.section`
 display: flex;
   justify-content: center;
   margin-top: 2rem;
-  height: 15vh;
+  height: 5vh;
+`;
+const SearchWords = styled.section`
+display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  height: 5vh;
 `;
 
 const CardSection = styled.section`
