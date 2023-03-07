@@ -1,17 +1,17 @@
 import React from 'react';
 import '../index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
+import SearchExercise from "./SearchExercise"
 import Header from './Header';
-import WorkoutPlanner from './WorkoutPlanner';
+import WorkoutControl from './WorkoutControl';
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/workout-planner" element={<WorkoutPlanner />} />
+        <Route path="/" element={<WorkoutControl />} />
+        <Route path="/search-exercise" element={<SearchExercise />} />
       </Routes>
     </Router>
   );
