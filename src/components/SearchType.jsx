@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { fetchData } from "../utils/fetchData"
+import { fetchData } from "../utils/fetchData";
 
-
-
-
-function SearchExercise(props) {
+function SearchType(props) {
 
   const [exercises, setExercises] = useState([]);
-  const [search, setSearch] = useState('');
+  const [type, setType] = useState('');
 
-  function submitHandler(e) {
+  function submitType(e) {
     e.preventDefault();
     // console.log(search);
     let SearchOptions = {
@@ -21,7 +18,7 @@ function SearchExercise(props) {
       }
     };
 
-    fetchData(('https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?muscle=' + search), SearchOptions)
+    fetchData(('https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?type=' + type), SearchOptions)
       .then((data) => {
         console.log(data)
         setExercises(data)
@@ -37,34 +34,25 @@ function SearchExercise(props) {
       <SearchWords>
         <div>
           <h1 className="text-2xl font-bold">Possible Searches:</h1>
-          abdominals |
-          adductors |
-          abductors |
-          biceps |
-          calves |
-          chest |
-          forearms |
-          glutes |
-          hamstrings |
-          lats |
-          lower_back |
-          middle_back |
-          neck |
-          quadriceps |
-          traps |
-          triceps 
+          cardio |
+          olympic_weightlifting |
+          plyometrics |
+          powerlifting |
+          strength |
+          stretching |
+          strongman |
         </div>
       </SearchWords>
       <SearchBar>
-        <form onSubmit={submitHandler}>
+        <form onSubmit={submitType}>
           <div className="relative">
             <input
               type="text"
-              value={search}
+              value={type}
               onChange={(e) => {
-                setSearch(e.target.value);
+                setType(e.target.value);
               }}
-              class="block w-full p-3 pl-10 mr-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search by Muscle" required />
+              class="block w-full p-3 pl-10 mr-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search by Category" required />
             <button type="submit" className="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 p-2  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
           </div>
         </form>
@@ -86,7 +74,6 @@ function SearchExercise(props) {
             <hr />
             <span>Instructions: <br />
               {exercise.instructions}</span>
-            <hr />
           </div>
         ))}
       </CardSection >
@@ -115,4 +102,4 @@ const CardSection = styled.section`
     }
 `;
 
-export default SearchExercise;
+export default SearchType;

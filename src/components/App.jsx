@@ -1,9 +1,10 @@
 import React from 'react';
 import '../index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SearchExercise from "./SearchExercise"
+import SearchMuscle from "./SearchMuscle";
 import Header from './Header';
 import WorkoutControl from './WorkoutControl';
+import SearchType from './SearchType';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<WorkoutControl />} />
-        <Route path="/exercise-search" element={<SearchExercise />} />
+        <Route path="/muscle" element={<SearchMuscle />} />
+        <Route path="/category" element={<SearchType />} />
       </Routes>
     </Router>
   );
