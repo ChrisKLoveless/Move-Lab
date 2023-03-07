@@ -8,7 +8,7 @@ function Header() {
   return (
     <NavBar>
       <NavbarBrand href="/"><h2 className="text-lime-400 font-bold font-mono">Move Lab</h2></NavbarBrand>
-      <Nav.Link href="/workout-planner"><h5 className="text-lime-400">Workout Planner</h5></Nav.Link>
+      <Nav.Link href="/exercise-search"><h5 className="text-lime-400">Exercise Search</h5></Nav.Link>
       <SignInSignOut />
     </NavBar>
   );

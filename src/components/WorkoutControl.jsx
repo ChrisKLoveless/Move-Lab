@@ -34,7 +34,7 @@ function WorkoutControl() {
             <h5>Type: {exercise.type}</h5>
             <h5>Body Part: {exercise.muscle}</h5>
             <h5>Equipment: {exercise.equipment}</h5>
-            <h5>Difficulty{exercise.difficulty}</h5>
+            <h5>Difficulty: {exercise.difficulty}</h5>
             <h5>Instructions: {exercise.instructions}</h5>
             <hr />
           </div>

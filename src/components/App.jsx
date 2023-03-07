@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<WorkoutControl />} />
-        <Route path="/search-exercise" element={<SearchExercise />} />
+        <Route path="/exercise-search" element={<SearchExercise />} />
       </Routes>
     </Router>
   );
