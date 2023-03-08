@@ -65,11 +65,11 @@ function SignInSignOut() {
               type='text'
               name='email'
               placeholder='Email' />
-            <input className="border-2 rounded"
+            <input className="border-2 rounded ml-2"
               type='password'
               name='password'
               placeholder='Password' />
-            <button className="bg-blue-700 hover:bg-blue-700 text-white font-bold py-1 px-2 ml-2 rounded" type='submit'>Sign Up</button>
+            <button className="bg-lime-500 hover:bg-blue-700 text-white font-bold py-1 px-2 ml-2 rounded" type='submit'>Sign Up</button>
           </form>
           <p className="text-blue-500">{signUpSuccess}</p>
 
@@ -81,11 +81,11 @@ function SignInSignOut() {
               type='text'
               name='signInEmail'
               placeholder='Email' />
-            <input className="border-2 rounded"
+            <input className="border-2 rounded ml-2"
               type='password'
               name='signInPassword'
               placeholder='Password' />
-            <button className="bg-lime-700 hover:bg-blue-700 text-white font-bold py-1 px-2 ml-2 rounded" type='submit'>Sign In</button>
+            <button className="bg-lime-500 hover:bg-blue-700 text-white font-bold py-1 px-2 ml-2 rounded" type='submit'>Sign In</button>
           </form>
           <br />
           <p className="text-blue-500">{signInSuccess}</p>
@@ -95,7 +95,7 @@ function SignInSignOut() {
           <div className="text-red-700">
             {signOutSuccess}
           </div>
-          <button className="bg-slate-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" onClick={handleClose}>
+          <button className="bg-slate-800 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" onClick={handleClose}>
             Close
           </button>
           <button className="bg-red-700 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" onClick={doSignOut}>Log Out</button>

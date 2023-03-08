@@ -12,14 +12,10 @@ function Banner() {
           <div className="design"></div>
           <div className="content">
             <h1 className="title">
-              complete <span style={{ color: "#9BD827" }}>daily workout</span>{" "}
-              Exercises
+              complete <span style={{ color: "#9BD827" }}>daily workouts</span>{" "}
             </h1>
             <p style={{ color: "#9BD827" }}>
               Sweat. <span style={{ color: "#fff" }}>Smile.</span> Repeat.
-            </p>
-            <p className="description text-white">
-              Checkout the most effective exercises.
             </p>
             <button text={`Explore Exercises`} target="ExploreExercise" />
           </div>
@@ -166,5 +162,4 @@ const Section = styled.section`
     }
   }
 `;
-
 export default Banner;
