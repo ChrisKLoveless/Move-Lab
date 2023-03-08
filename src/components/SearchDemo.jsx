@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import { SearchBar, SearchWords, CardSection } from "./StyledComponents";
 import { fetchData, ExerciseDBOptions } from "../utils/fetchData";
 
 
 function SearchDemo() {
   const [exercises, setExercises] = useState([]);
-  // const [filterExercises, setFilterExercises] = useState([]);
   const [search, setSearch] = useState('');
 
   function handleDemo(e) {
@@ -29,12 +28,12 @@ function SearchDemo() {
       exercise.equipment.toLowerCase().includes(search) ||
       exercise.bodyPart.toLowerCase().includes(search)
   );
-
   const slicedArray = filterExercises.slice(0, 6);
+
   return (
     <div>
       <SearchWords>
-        <div>
+        <div className="text-center">
           <h1 className="text-2xl font-bold">Search for Exercise Demo:</h1>
           Name, Body Part, Muscle Group, or Equipment
         </div>
@@ -48,7 +47,7 @@ function SearchDemo() {
               onChange={(e) => {
                 setSearch(e.target.value);
               }}
-              className="block w-full p-3 pl-10 mr-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search with Demo" required />
+              className="block w-full p-3 px-5 pl-10 mr-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search with Demo" required />
             <button type="submit" className="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 p-2  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
           </div>
         </form>
@@ -74,26 +73,5 @@ function SearchDemo() {
   )
 }
 
-const SearchBar = styled.section`
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  height: 5vh;
-`;
-const SearchWords = styled.section`
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  height: 5vh;
-`;
 
-const CardSection = styled.section`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
-  margin-top: 7rem;
-    }
-`;
 export default SearchDemo;

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { auth } from "../firebase";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function SignInSignOut() {
@@ -57,11 +56,11 @@ function SignInSignOut() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title className="text-center">Sign-In</Modal.Title>
+          <Modal.Title className="text-center font-bold">User Log In</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <form onSubmit={doSignUp}>
-            <p className="text-xl font-bold mt-2">Create Account</p>
+            <p className="text-xl font-bold mt-2 pb-2">Create Account</p>
             <input className="border-2 rounded"
               type='text'
               name='email'
@@ -70,14 +69,14 @@ function SignInSignOut() {
               type='password'
               name='password'
               placeholder='Password' />
-            <Button className="text-white bg-slate-400" type='submit'>Sign up</Button>
+            <button className="bg-blue-700 hover:bg-blue-700 text-white font-bold py-1 px-2 ml-2 rounded" type='submit'>Sign Up</button>
           </form>
           <p className="text-blue-500">{signUpSuccess}</p>
 
-          <p className="italic">OR</p>
+          <p className="italic pt-2">OR</p>
 
           <form onSubmit={doSignIn}>
-            <p className="text-xl font-bold mt-2">Sign In</p>
+            <p className="text-xl font-bold mt-2 pb-2">Sign In</p>
             <input className="border-2 rounded"
               type='text'
               name='signInEmail'
@@ -86,7 +85,7 @@ function SignInSignOut() {
               type='password'
               name='signInPassword'
               placeholder='Password' />
-            <Button className="text-white bg-slate-400" type='submit'>Sign In</Button>
+            <button className="bg-lime-700 hover:bg-blue-700 text-white font-bold py-1 px-2 ml-2 rounded" type='submit'>Sign In</button>
           </form>
           <br />
           <p className="text-blue-500">{signInSuccess}</p>
@@ -96,10 +95,10 @@ function SignInSignOut() {
           <div className="text-red-700">
             {signOutSuccess}
           </div>
-          <Button className="text-white bg-slate-900" onClick={handleClose}>
+          <button className="bg-slate-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" onClick={handleClose}>
             Close
-          </Button>
-          <Button className="text-white bg-red-400" onClick={doSignOut}>Sign out</Button>
+          </button>
+          <button className="bg-red-700 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" onClick={doSignOut}>Log Out</button>
         </Modal.Footer>
       </Modal>
 
