@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { SearchOptions, fetchData } from "../utils/fetchData";
+import { Div } from "./StyledComponents";
 
 function WorkoutControl() {
 
@@ -20,10 +21,6 @@ function WorkoutControl() {
   )
 }
 
-const Div = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
+
 
 export default WorkoutControl;
