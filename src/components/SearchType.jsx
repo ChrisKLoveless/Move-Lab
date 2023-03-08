@@ -28,7 +28,7 @@ function SearchType(props) {
       })
   }
 
-  const slicedArray = exercises.slice(0, 3);
+  const slicedArray = exercises.slice(0, 6);
   return (
     <div>
       <SearchWords>
@@ -82,13 +82,13 @@ function SearchType(props) {
 }
 
 const SearchBar = styled.section`
-display: flex;
+  display: flex;
   justify-content: center;
   margin-top: 2rem;
   height: 5vh;
 `;
 const SearchWords = styled.section`
-display: flex;
+  display: flex;
   justify-content: center;
   margin-top: 2rem;
   height: 5vh;
@@ -96,7 +96,9 @@ display: flex;
 
 const CardSection = styled.section`
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   text-align: center;
   margin-top: 7rem;
     }
