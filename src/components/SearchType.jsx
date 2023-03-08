@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { fetchData } from "../utils/fetchData";
+import { ApiNinjaOptions } from "../utils/fetchData";
 
 function SearchType(props) {
 
@@ -10,15 +11,8 @@ function SearchType(props) {
   function submitType(e) {
     e.preventDefault();
     // console.log(search);
-    let SearchOptions = {
-      method: 'GET',
-      headers: {
-        'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
-        'X-RapidAPI-Host': 'exercises-by-api-ninjas.p.rapidapi.com'
-      }
-    };
 
-    fetchData(('https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?type=' + type), SearchOptions)
+    fetchData(('https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?type=' + type), ApiNinjaOptions)
       .then((data) => {
         console.log(data)
         setExercises(data)
