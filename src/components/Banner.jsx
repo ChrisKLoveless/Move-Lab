@@ -2,6 +2,7 @@ import React from "react";
 import banner from "../assets/img/banner.png";
 import styled from "styled-components";
 
+
 function Banner() {
 
   return(
@@ -165,4 +166,5 @@ const Section = styled.section`
     }
   }
 `;
+
 export default Banner;

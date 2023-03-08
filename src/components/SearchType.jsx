@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SearchBar, CardSection, SearchWords } from "./StyledComponents";
+import { SearchBar, CardSection, SearchWords, ExerciseCardDiv } from "./StyledComponents";
 import { fetchData, ApiNinjaOptions } from "../utils/fetchData";
 
 function SearchType() {
@@ -54,6 +54,7 @@ function SearchType() {
 
       <CardSection>
         {slicedArray.map((exercise, index) => (
+
           <div key={index} className="block max-w-sm p-6 text-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             <span className="mb-2 text-xl font-bold tracking-tight">{exercise.name}</span>
             <hr />
