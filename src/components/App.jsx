@@ -5,6 +5,7 @@ import SearchMuscle from "./SearchMuscle";
 import Header from './Header';
 import WorkoutControl from './WorkoutControl';
 import SearchType from './SearchType';
+import SearchDemo from './SearchDemo';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<WorkoutControl />} />
         <Route path="/muscle" element={<SearchMuscle />} />
         <Route path="/category" element={<SearchType />} />
+        <Route path="/demo" element={<SearchDemo />} />
       </Routes>
     </Router>
   );

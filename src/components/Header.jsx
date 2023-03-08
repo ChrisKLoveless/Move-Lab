@@ -14,6 +14,7 @@ function Header() {
       </NavbarBrand>
       <Nav.Link href="/muscle"><h5 className="text-lime-400">Exercises by Muscle</h5></Nav.Link>
       <Nav.Link href="/category"><h5 className="text-lime-400">Exercises by Category</h5></Nav.Link>
+      <Nav.Link href="/demo"><h5 className="text-lime-400">Exercises with Demo</h5></Nav.Link>
       <SignInSignOut />
     </NavBar>
   );
