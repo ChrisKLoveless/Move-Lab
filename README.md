@@ -25,7 +25,8 @@ Move Lab is a modern fitness web application. It uses ExerciseDB and Ninja-API t
 2. Navigate to the project directory and run `$ npm install`.
 3. Add a `.env` file to the .gitignore and commit the change.
 4. Add a `.env` file to the root directory.
-5. Follow the [steps here](https://www.learnhowtoprogram.com/react/react-with-nosql/adding-firebase-to-react) to create your .env file.
+5. Follow the [steps here](https://www.learnhowtoprogram.com/react/react-with-nosql/adding-firebase-to-react) to create your .env file and Firebase account.
+
 
 ### `.env` Setup
 
