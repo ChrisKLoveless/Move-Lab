@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Div, CardSection } from "./StyledComponents";
-import { allExercises } from "./AllExercises";
 import { fetchData, ExerciseDBOptions } from "../utils/fetchData";
 
 
