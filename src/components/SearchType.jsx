@@ -57,7 +57,7 @@ function SearchType() {
       <CardSection>
         {slicedArray.map((exercise, index) => (
 
-          <div key={index} className="block max-w-sm bg-zinc-900 p-3 m-2 rounded-lg text-slate-300 shadow hover:bg-gray-600">
+          <div key={index} className="block max-w-sm bg-zinc-900 p-3 m-2 rounded-lg text-slate-200 shadow hover:bg-zinc-700">
             <span className="text-xl font-bold tracking-tight">{exercise.name}</span>
             <hr />
             <span className="text-lg pr-4">Type:</span> <em>{exercise.type}</em> 

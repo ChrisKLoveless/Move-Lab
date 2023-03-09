@@ -19,10 +19,10 @@ function SignInSignOut() {
     const password = event.target.password.value;
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        setSignUpSuccess(<strong>You have successfully signed up, {userCredential.user.email}</strong>)
+        setSignUpSuccess(<strong className="text-black">You have successfully signed up, {userCredential.user.email}!</strong>)
       })
       .catch((error) => {
-        setSignUpSuccess(<em>There was an error signing you up: {error.message}</em>)
+        setSignUpSuccess(<em className="text-black">There was an error signing you up: {error.message}</em>)
       });
   }
 
@@ -32,17 +32,17 @@ function SignInSignOut() {
     const password = event.target.signInPassword.value;
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        setSignInSuccess(<strong>You've successfully signed in as {userCredential.user.email}</strong>)
+        setSignInSuccess(<strong className="text-black">You've successfully signed in as {userCredential.user.email}!</strong>)
       })
       .catch((error) => {
-        setSignInSuccess(<em>There was an error signing in: {error.message}</em>)
+        setSignInSuccess(<em className="text-black">There was an error signing in: {error.message}</em>)
       });
   }
 
   function doSignOut() {
     signOut(auth)
       .then(function () {
-        setSignOutSuccess(<strong>You have successfully signed out!</strong>);
+        setSignOutSuccess(<strong className="text-black">You have successfully signed out!</strong>);
       }).catch(function (error) {
         setSignOutSuccess(<em>There was an error signing out: ${error.message}</em>);
       });
@@ -50,7 +50,7 @@ function SignInSignOut() {
 
   return (
     <React.Fragment>
-      <button className="text-lime-400" onClick={handleShow}>
+      <button className="text-lime-400 font-bold" onClick={handleShow}>
         Sign In
       </button>
 
@@ -69,7 +69,7 @@ function SignInSignOut() {
               type='password'
               name='password'
               placeholder='Password' />
-            <button className="bg-lime-500 hover:bg-blue-700 text-white font-bold py-1 px-2 ml-2 rounded" type='submit'>Sign Up</button>
+            <button className="bg-lime-500 hover:bg-lime-700 text-white font-bold py-1 px-2 ml-2 rounded" type='submit'>Sign Up</button>
           </form>
           <p className="text-blue-500">{signUpSuccess}</p>
 
@@ -85,7 +85,7 @@ function SignInSignOut() {
               type='password'
               name='signInPassword'
               placeholder='Password' />
-            <button className="bg-lime-500 hover:bg-blue-700 text-white font-bold py-1 px-2 ml-2 rounded" type='submit'>Sign In</button>
+            <button className="bg-lime-500 hover:bg-lime-700 text-white font-bold py-1 px-2 ml-2 rounded" type='submit'>Sign In</button>
           </form>
           <br />
           <p className="text-blue-500">{signInSuccess}</p>
@@ -95,10 +95,10 @@ function SignInSignOut() {
           <div className="text-red-700">
             {signOutSuccess}
           </div>
-          <button className="bg-slate-800 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" onClick={handleClose}>
+          <button className="bg-slate-800 hover:bg-slate-700 text-white font-bold py-1 px-2 rounded" onClick={handleClose}>
             Close
           </button>
-          <button className="bg-slate-900 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" onClick={doSignOut}>Log Out</button>
+          <button className="bg-slate-900 hover:bg-slate-700 text-white font-bold py-1 px-2 rounded" onClick={doSignOut}>Log Out</button>
         </Modal.Footer>
       </Modal>
 
