@@ -1,25 +1,34 @@
-# Move Lab
+# MOVE LAB
 
-### Author: Chris Loveless
+## Author: Chris Loveless
 
+---
 ### Description: 
 
-### Component Diagram 
+Move Lab is a modern fitness web application. It uses ExerciseDB and Ninja-API to provide a robust resource of exercises. Users can search various parameters to filter thousands of results to find or explore exercises. These parameters include, muscle groups, fitness categories, body parts, and equipment. Animations are used to provide a demonstration of the exercises found. Firebase is also used for Authentication concerns.
+
+---
+
+### Website 
+
+![homepage](src/assets/img/homepage.jpg)
+
+![sign up](src/assets/img/signup.jpg)
+
+---
 
 ## Project Setup 
-1. Clone this repo to your desktop
-2. Follow the steps below to create your .env file
 
-### Rapid API Setup
-1. Create an account at []()
-// host page or require subscription?
-```js
-REACT_APP_RAPID_API_KEY= "YOUR-RAPID-API-KEY"
-```
+1. Clone this repo to your desktop.
+2. Navigate to the project directory and run `$ npm install`.
+3. Add a `.env` file to the .gitignore and commit the change.
+4. Add a `.env` file to the root directory.
+5. Follow the [steps here](https://www.learnhowtoprogram.com/react/react-with-nosql/adding-firebase-to-react) to create your .env file.
 
-### Firebase Setup
-1. [Follow these steps](https://www.learnhowtoprogram.com/react/react-with-nosql/adding-firebase-to-react)
-2. Use this template below to setup your .env file
+### `.env` Setup
+
+1. Use this template below to setup your .env file
+
 ```js
 REACT_APP_FIREBASE_API_KEY = "YOUR-UNIQUE-CREDENTIALS"
 REACT_APP_FIREBASE_AUTH_DOMAIN = "YOUR-PROJECT-NAME.firebaseapp.com"
@@ -28,6 +37,15 @@ REACT_APP_FIREBASE_STORAGE_BUCKET = "YOUR-PROJECT-NAME.appspot.com"
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID = "YOUR-PROJECT-SENDER-ID"
 REACT_APP_FIREBASE_APP_ID = "YOUR-PROJECT-APP-ID"
 ```
+### Rapid API Setup
+
+1. Create an account at [rapidapi.com](https://rapidapi.com/) and add your key to the .env file.
+
+```js
+REACT_APP_RAPID_API_KEY= "YOUR-RAPID-API-KEY"
+```
+
+---
 
 ## Available Scripts
 
@@ -51,47 +69,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
