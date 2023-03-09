@@ -35,7 +35,7 @@ function SearchDemo() {
       <SearchWords>
         <div className="text-center">
           <h1 className="text-2xl font-bold">Search for Exercises:</h1>
-          <em>(Use a Name, Body Part, Muscle Group, or Equipment)</em>
+          <em className="text-lg">(Use a Name, Body Part, Muscle Group, or Equipment)</em>
         </div>
       </SearchWords>
       <SearchBar>

@@ -34,7 +34,7 @@ function SearchType() {
             powerlifting |
             strength |
             stretching |
-            strongman |
+            strongman 
           </em>
         </div>
       </SearchWords>

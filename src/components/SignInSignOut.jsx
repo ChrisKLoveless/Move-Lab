@@ -73,7 +73,7 @@ function SignInSignOut() {
           </form>
           <p className="text-blue-500">{signUpSuccess}</p>
 
-          <p className="italic pt-2">OR</p>
+          <p className="italic pt-2 font-bold">OR</p>
 
           <form onSubmit={doSignIn}>
             <p className="text-xl font-bold mt-2 pb-2">Sign In</p>
@@ -98,7 +98,7 @@ function SignInSignOut() {
           <button className="bg-slate-800 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" onClick={handleClose}>
             Close
           </button>
-          <button className="bg-red-700 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" onClick={doSignOut}>Log Out</button>
+          <button className="bg-slate-900 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded" onClick={doSignOut}>Log Out</button>
         </Modal.Footer>
       </Modal>
 

@@ -7,7 +7,7 @@ function Loader() {
     loading: true,
     size: 120,
     duration: 3,
-    colors: ["#9BD827", "#292929", "#F0F0F0"],
+    colors: ["#9BD827", "#292929", "#a1a1aa"],
   };
 
   return (

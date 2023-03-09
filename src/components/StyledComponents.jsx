@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 export const Div = styled.div`
 display: flex;
 flex-direction: column;
@@ -13,7 +11,7 @@ padding: 1rem 2rem 0.5rem 2rem;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: #1F1F1F;
+background-color: #18181b;
 img {
   height: 3rem;
   width: 3rem;
@@ -45,6 +43,10 @@ export const CardSection = styled.section`
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
-  margin-top: 7rem;
-    }
+  margin-top: 2rem;
+`;
+
+export const WelcomeMessage = styled.section`
+  display: flex;
+  margin-top: 2rem;
 `;
