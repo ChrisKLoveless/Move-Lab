@@ -14,11 +14,11 @@ function SearchMuscle(props) {
 
     fetchData(('https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?muscle=' + muscle), ApiNinjaOptions)
       .then((data) => {
-        console.log(data)
-        setExercises(data)
+        console.log(data);
+        setExercises(data);
       })
       .catch((err) => {
-        console.log(err)
+        console.log(err);
       })
   }
 

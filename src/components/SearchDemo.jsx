@@ -13,11 +13,11 @@ function SearchDemo() {
 
     fetchData('https://exercisedb.p.rapidapi.com/exercises', ExerciseDBOptions)
       .then((data) => {
-        console.log(data)
-        setExercises(data)
+        console.log(data);
+        setExercises(data);
       })
       .catch((err) => {
-        console.log(err)
+        console.log(err);
       })
   }
 
