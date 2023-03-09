@@ -50,7 +50,7 @@ function SearchMuscle(props) {
       </SearchWords>
       <SearchBar>
         <form onSubmit={submitMuscle}>
-          <div className="relative">
+          <div className="relative pt-4">
             <input
               type="text"
               value={muscle}

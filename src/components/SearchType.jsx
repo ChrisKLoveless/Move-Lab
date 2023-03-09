@@ -40,7 +40,7 @@ function SearchType() {
       </SearchWords>
       <SearchBar>
         <form onSubmit={submitType}>
-          <div className="relative">
+          <div className="relative pt-4">
             <input
               type="text"
               value={type}

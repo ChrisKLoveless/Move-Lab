@@ -40,7 +40,7 @@ function SearchDemo() {
       </SearchWords>
       <SearchBar>
         <form onSubmit={handleDemo}>
-          <div className="relative">
+          <div className="relative pt-4">
             <input
               type="text"
               value={search}
