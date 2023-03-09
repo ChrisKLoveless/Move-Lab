@@ -15,6 +15,8 @@ Move Lab is a modern fitness web application. It uses ExerciseDB and Ninja-API t
 
 ![sign up](src/assets/img/signup.jpg)
 
+![demo page](src/assets/img/demopage.jpg)
+
 ---
 
 ## Project Setup 
