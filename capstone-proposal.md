@@ -4,7 +4,7 @@
 Chris Loveless
 
 ### Name of Project:
-  Move Lab
+  MOVE LAB
 
 ### Project's Purpose or Goal: (What will it do for users?)
   
