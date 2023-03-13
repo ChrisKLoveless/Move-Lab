@@ -26,7 +26,7 @@ function SearchMuscle(props) {
   return (
     <div>
       <SearchWords>
-        <div className="text-center">
+        <div className="text-center text-slate-200">
           <h1 className="text-2xl font-bold">Possible Searches:</h1>
           <em className="text-lg">
             abdominals |

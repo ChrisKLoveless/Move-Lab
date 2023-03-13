@@ -33,7 +33,7 @@ function SearchDemo() {
   return (
     <div>
       <SearchWords>
-        <div className="text-center">
+        <div className="text-center text-slate-200">
           <h1 className="text-2xl font-bold">Search for Exercises:</h1>
           <em className="text-lg">(Use a Name, Body Part, Muscle Group, or Equipment)</em>
         </div>

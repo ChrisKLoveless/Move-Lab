@@ -31,7 +31,7 @@ function Home() {
         </div>
       </WelcomeMessage>
 
-      <h2 className="text-center font-bold text-2xl">Sample exercises</h2>
+      <h2 className="text-center font-bold text-2xl text-slate-200">Sample exercises</h2>
 
       <CardSection>
         {slicedArray.map((exercise, index) => (

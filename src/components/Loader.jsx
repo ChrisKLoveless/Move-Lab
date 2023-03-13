@@ -13,7 +13,7 @@ function Loader() {
   return (
     <LoaderDiv className="loader">
       <GooeyCircleLoader {...loaderProps} />
-      <h2 className="text-2xl font-bold text-black">Move Lab</h2>
+      <h2 className="text-2xl text-white font-bold">Move Lab</h2>
     </LoaderDiv>
   );
 }
